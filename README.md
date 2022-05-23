@@ -11,3 +11,7 @@ Module Three:
 Convert travel template from static HTML data to dynamic JSON
 
 Module Four:
+Configure and create a NoSQL database with data models, schema for data files, and storage
+JavaScript Database Access Module, API Integration in JSON, Populatte Database with SeedGoose, Test data with MongoDB Compass
+
+Module Five:
