@@ -4,10 +4,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const hbs = require('hbs');
+//UPDATED 6/5/2022
+require('./app_api/database/db'); //trigger database connection
+//given code below may have had typo so I added "/" as shown above
+//require('.app_api/database/db');
+//require('./app_api/models/db'); //given in guide
 
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 var travelRouter = require('./app_server/routes/travel');
+//UPDATED 6/5/2022
+const apiRouter = require('./app_api/routes/index');    //reference new router
 
 var app = express();
 
@@ -27,6 +34,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/travel', travelRouter);
+//UPDATED 6/5/2022
+app.use('/api', apiRouter);   //send requests for '/api' to the api router
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

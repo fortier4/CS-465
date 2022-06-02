@@ -4,6 +4,7 @@
 
 const mongoose = require('mongoose');
 let dbURI = 'mongodb://localhost/Loc8r';//may need to update, different than code in guide
+//let dbURI = 'mongodb://${host}/travlr';
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
@@ -49,6 +50,6 @@ process.on('SIGTERM', () => {
 connect();
 
 //mongoose schema
-require('/travlr');
-
+require('./models/travlr'); //updated
+//require('/travlr');
 //require('./locations');
