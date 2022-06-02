@@ -15,3 +15,5 @@ Configure and create a NoSQL database with data models, schema for data files, a
 JavaScript Database Access Module, API Integration in JSON, Populatte Database with SeedGoose, Test data with MongoDB Compass.
 
 Module Five:
+Create endpoints to return JSON data, establish routes for said endpoints to correctly utilize Mongoose functionality to get and set JSON data. 
+Design and implement Node.js, MongoDB RESTful API, by applying middleware which will execute queries for POST, GET, and PUT operations.
