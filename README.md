@@ -19,6 +19,8 @@ Create endpoints to return JSON data, establish routes for said endpoints to cor
 Design and implement Node.js, MongoDB RESTful API, by applying middleware which will execute queries for POST, GET, and PUT operations.
 
 Module Six:
-
+Use Angular framework to build a client side Single Page Application (SPA). 
+Single-Page Application will host the Client-Admin-Side Website that is based on project requirements. 
+Create services and classes to make requests to an API server for CRUD operations.
 
 Module Seven:
