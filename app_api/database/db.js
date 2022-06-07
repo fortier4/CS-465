@@ -2,13 +2,34 @@
 //Week Four Assignment
 //CS 465
 
-const mongoose = require('mongoose');
-let dbURI = 'mongodb://localhost/Loc8r';//may need to update, different than code in guide
+const mongoose = require("mongoose");
+//BELOW CODE COMMENTED OUT TEMPORARILY FOR ERROR TESTING
+//let dbURI = 'mongodb://localhost/Loc8r';//may need to update, different than code in guide
 //let dbURI = 'mongodb://${host}/travlr';
-if (process.env.NODE_ENV === 'production') {
-  dbURI = process.env.MONGODB_URI;
-}
-mongoose.connect(dbURI);
+//if (process.env.NODE_ENV === 'production') {
+//  dbURI = process.env.MONGODB_URI;
+//}
+//mongoose.connect(dbURI);
+
+//UPDATED
+//*******
+const host = process.env.DB_HOST || "127.0.0.1";
+const dbURI = `mongodb://${host}/travlr`;
+const readLine = require("readline");
+
+//avoid current server discovery and monitoring engine is depreciated
+mongoose.set("useUnifiedTopology", true);
+
+const connect = () => {
+  setTimeout(
+    () =>
+      mongoose.connect(dbURI, {
+        useNewUrlParser: true,
+        useCreateIndex: true,
+      }),
+    1000
+  );
+};
 
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose connected to ${dbURI}`);
