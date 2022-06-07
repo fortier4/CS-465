@@ -17,3 +17,8 @@ JavaScript Database Access Module, API Integration in JSON, Populatte Database w
 Module Five:
 Create endpoints to return JSON data, establish routes for said endpoints to correctly utilize Mongoose functionality to get and set JSON data. 
 Design and implement Node.js, MongoDB RESTful API, by applying middleware which will execute queries for POST, GET, and PUT operations.
+
+Module Six:
+
+
+Module Seven:
