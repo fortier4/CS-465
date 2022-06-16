@@ -74,3 +74,6 @@ connect();
 require('./models/travlr'); //updated
 //require('/travlr');
 //require('./locations');
+
+//UPDATE 6/15/2022
+require('./models/user');
