@@ -24,3 +24,6 @@ Single-Page Application will host the Client-Admin-Side Website that is based on
 Create services and classes to make requests to an API server for CRUD operations.
 
 Module Seven:
+Apply security endpoints to prevent unauthorized users from accessing website.
+Single layer of security, including an HTML login form and logic to secure administrative methods.
+Test API endpoints manually with testing tool to verify functionality.
